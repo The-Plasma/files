@@ -1,0 +1,29 @@
+#Store {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    justify-content: center;
+    gap: 1vw;
+    overflow-x: hidden;
+}
+
+#Store div {
+    height: 190vh;
+    border: 1px solid white;
+}
+
+.filter {
+    width: 25vw;
+    position: fixed;
+    left: 1vw;
+}
+
+.products {
+    width: 42vw;
+}
+
+.checkout {
+    width: 25vw;
+    position: fixed;
+    right: 1vw;
+}

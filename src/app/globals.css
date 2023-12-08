@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    z-index: 1000;
+    color: white;
+}
+
+.nav {
+    height: 7vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    left: 1vw;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3vh;
+}
+
+.hamburger-menu {
+    position: absolute;
+    right: 1vw;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5vh;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Center-aligns the nav links */
+    width: 100%; /* Set width to take up full width */
+    gap: 2vw;
+}
+
+.nav-links Link {
+    padding: 1vw;
+}
+
+.nav-links Link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-lines {
+    display: flex;
+    justify-content: center;
+    width: 100vw; /* Full width of the viewport */
+}
+
+.nav-lines div {
+    width: 25%; /* Adjust as needed */
+    height: 0.5px; /* Height of the lines */
+    background-color: white; /* Color of the lines */
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    .nav {
+
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links on smaller screens */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+        margin-right: 5vw; /* Adjust margin using vw */
+    }
+
+    .nav-lines {
+        display: none;
+        /* Add any additional styling for the lines here */
+    }
+}
+
+
+.temp {
+    position: relative;
+    height: 10vh;
+}
