@@ -13,17 +13,65 @@
 }
 
 .filter {
-    width: 25vw;
+    width: 20vw;
     position: fixed;
     left: 1vw;
 }
 
 .products {
-    width: 42vw;
+    width: 40vw;
+    overflow-x: hidden;
 }
 
 .checkout {
-    width: 25vw;
+    width: 20vw;
     position: fixed;
     right: 1vw;
 }
+
+
+
+#Store {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    gap: 1vw;
+    overflow-x: hidden;
+}
+
+#Store div {
+    height: 190vh;
+    border: 1px solid white;
+}
+
+.filter {
+    flex: 1;
+    max-width: 25vw;
+    position: fixed;
+    left: 1vw;
+}
+
+.products {
+    flex: 2;
+    max-width: 50vw;
+    overflow-x: hidden;
+}
+
+.checkout {
+    flex: 1;
+    max-width: 25vw;
+    position: fixed;
+    right: 1vw;
+}
+
+@media (max-width: 768px) {
+    .products {
+        max-width: 75vw;
+        right: 1vw;
+    }
+    .checkout {
+        display: none;
+    }
+}
+
